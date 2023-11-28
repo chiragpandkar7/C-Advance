@@ -1,4 +1,4 @@
-# Sketcher Writer Implementation
+# Assignment 8 - Use of std::vector<Template class>::iterator Container in C++ STL
 ## Overview
 This section details the implementation of the `Writer` class's `write` method, which writes triangle data to an output file. The method takes a file path and a vector of triangles as parameters.
 
@@ -8,9 +8,10 @@ This section details the implementation of the `Writer` class's `write` method, 
 
 ```cpp
 void Writer::write(std::string filePath, std::vector<Triangle>& triangles)
-Description
+```
+** Description **
 This method writes the coordinates of each vertex of the triangles in the provided vector to an output file. It ensures that the triangles are properly closed by repeating the coordinates of the first vertex.
-``` 
+
 #### Parameters ####
 - filePath: A string representing the file path where the triangle data will be written.
 - triangles: A vector of Triangle objects containing the geometric data.
