@@ -4,7 +4,7 @@
 * A map container is a data structure in the C++ Standard Template Library (STL) that stores data in key-value pairs.
   
 ## Function Definition ##
-*  In the code (src/Triangulation.cpp) file, a function named `getPerimeterOfAnyTriangle` has been created. This function takes the index of a triangle as input and prints its perimeter.
+*  In the code (src/Triangulation.cpp) file, a function named `getPerimeterOfTriangle` has been created. This function takes the index of a triangle as input and prints its perimeter.
 *  Here, the triangle index represents a key, and its perimeter represents a value.
 ### Function File: ###
 * src/Triangulation.cpp
