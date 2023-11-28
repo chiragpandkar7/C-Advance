@@ -1,39 +1,42 @@
-# Assignment 9: Sequential containers part one
-Welcome to the List-Based Sequential Containers project! This project focuses on utilizing lists as the primary sequential containers within the Standard Template Library (STL). The project follows guidelines that encourage the use of STL algorithms, lambda functions, and the avoidance of explicit loops (for, while, do/while) or recursion.
+# Assignment 9: List-Based Sequential Containers
+Welcome to the List-Based Sequential Containers project! This project is centered around the effective utilization of lists as the primary sequential containers within the Standard Template Library (STL). The guidelines for this project encourage the application of STL algorithms, lambda functions, and discourage the explicit use of loops (for, while, do/while) or recursion.
 
 ## Project Overview
 ### Objective
-* The main objective of this project is to explore and demonstrate the effective use of lists in a variety of scenarios. 
-* Lists are dynamic data structures that allow efficient insertion and removal of elements at any position, making them suitable for certain types of operations compared to other sequential containers.
+* The primary goal of this project is to explore and showcase the efficient use of lists in various scenarios.
+* Lists, being dynamic data structures enabling efficient insertion and removal of elements at any position, are well-suited for specific types of operations when compared to other sequential containers.
 
 ## Example Usage
-I have used list container in the entire project in place of vector.
-```
+In this project, I have employed the list container extensively instead of a vector.
+```cpp
 #pragma once
 #include <list>
 #include "Triangle.h"
-//class for bounding box around and object
+
+// Class for bounding box around an object
 class BBox
 {
 public:
-    //constructor
+    // Constructor
     BBox(std::list<Triangle> triangles);
-    //destructor
+
+    // Destructor
     ~BBox();
 
-
 private:
-    //calculate bounding box function iwth parametersas list of triangles
+    // Calculate bounding box function with parameters as a list of triangles
     void calculateBBox(std::list<Triangle> triangles);
-    //compare and update function with parameters as 3 Point3D points
+
+    // Compare and update function with parameters as three Point3D points
     void compareAndUpdate(Point3D refP, Point3D& min, Point3D& max);
 
 private:
-    //Point mMin denotes minimum point in an object 
+    // Point mMin denotes the minimum point in an object 
     Point3D mMin;
-    //Point mMax denotes maximum point in an object 
+
+    // Point mMax denotes the maximum point in an object 
     Point3D mMax;
-    //Point mMin denotes center point in an object 
+
+    // Point mMin denotes the center point in an object 
     Point3D mCenter;
 };
-```
