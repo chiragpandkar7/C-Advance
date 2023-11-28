@@ -5,14 +5,16 @@ This section details the implementation of the `Writer` class's `write` method, 
 ## Function Implementation
 ### Method: `write`
 #### Function Signature
+
 ```cpp
 void Writer::write(std::string filePath, std::vector<Triangle>& triangles)
 Description
 This method writes the coordinates of each vertex of the triangles in the provided vector to an output file. It ensures that the triangles are properly closed by repeating the coordinates of the first vertex.
-
+``` 
 #### Parameters ####
-* filePath: A string representing the file path where the triangle data will be written.
-* triangles: A vector of Triangle objects containing the geometric data.
+- filePath: A string representing the file path where the triangle data will be written.
+- triangles: A vector of Triangle objects containing the geometric data.
+
 ## Code Snippet ##
 ```
 // Open the output file for writing
